@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/itoken-admin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/itoken-common-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/itoken-config" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/itoken-config-respo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/itoken-dependencies" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/itoken-eureka" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/itoken-service-admin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/itoken-zipkin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/itoken-zuul" vcs="Git" />
+  </component>
+</project>

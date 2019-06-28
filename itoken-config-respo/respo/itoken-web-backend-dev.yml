@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: itoken-web-backend
+
+server:
+  port: 8603
+

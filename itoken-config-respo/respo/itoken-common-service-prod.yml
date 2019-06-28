@@ -1,0 +1,8 @@
+mybatis:
+  type-aliases-package: com.zyt.itoken.common.domain
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    cache-enabled: true
+
+
+
