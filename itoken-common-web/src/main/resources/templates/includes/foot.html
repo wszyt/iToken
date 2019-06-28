@@ -1,0 +1,34 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+</head>
+<body th:fragment="foot">
+<script th:src="@{{adminlte}/bower_components/jquery/dist/jquery.min.js(adminlte=${adminlte})}"></script>
+<!-- jQuery UI 1.11.4 -->
+<script th:src="@{{adminlte}/bower_components/jquery-ui/jquery-ui.min.js(adminlte=${adminlte})}"></script>
+<script>
+    $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.7 -->
+<script th:src="@{{adminlte}/bower_components/bootstrap/dist/js/bootstrap.min.js(adminlte=${adminlte})}"></script>
+<!-- Slimscroll -->
+<script th:src="@{{adminlte}/bower_components/jquery-slimscroll/jquery.slimscroll.min.js(adminlte=${adminlte})}"></script>
+<script th:src="@{{adminlte}/plugins/jquery-validation-1.17.0/dist/jquery.validate.min.js(adminlte=${adminlte})}"></script>
+<script th:src="@{{adminlte}/plugins/jquery-validation-1.17.0/dist/additional-methods.min.js(adminlte=${adminlte})}"></script>
+<script th:src="@{{adminlte}/plugins/jquery-validation-1.17.0/src/localization/messages_zh.js(adminlte=${adminlte})}"></script>
+<!-- iCheck 1.0.1 -->
+<script th:src="@{{adminlte}/plugins/iCheck/icheck.min.js(adminlte=${adminlte})}"></script>
+<!-- DataTables -->
+<script th:src="@{{adminlte}/bower_components/datatables.net/js/jquery.dataTables.min.js(adminlte=${adminlte})}"></script>
+<script th:src="@{{adminlte}/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js(adminlte=${adminlte})}"></script>
+
+<!-- FastClick -->
+<script th:src="@{{adminlte}/bower_components/fastclick/lib/fastclick.js(adminlte=${adminlte})}"></script>
+<!-- AdminLTE App -->
+<script th:src="@{{adminlte}/dist/js/adminlte.min.js(adminlte=${adminlte})}"></script>
+<script src="/assets/app/validate.js"></script>
+<script src="/assets/app/app.js"></script>
+<script src="/assets/app/datetime.js"></script>
+</body>
+</html>

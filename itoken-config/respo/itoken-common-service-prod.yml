@@ -1,0 +1,27 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://192.168.142.132:8084
+  zipkin:
+    base-url: http://192.168.142.132:9411
+
+
+mybatis:
+  type-aliases-package: com.zyt.itoken.common.domain
+  mapper-locations: classpath:mapper/*.xml
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.142.135:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info

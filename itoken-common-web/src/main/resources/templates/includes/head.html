@@ -1,0 +1,28 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" th:href="@{{adminlte}/bower_components/bootstrap/dist/css/bootstrap.min.css(adminlte=${adminlte})}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" th:href="@{{adminlte}/bower_components/font-awesome/css/font-awesome.min.css(adminlte=${adminlte})}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" th:href="@{{adminlte}/bower_components/Ionicons/css/ionicons.min.css(adminlte=${adminlte})}">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" th:href="@{{adminlte}/plugins/iCheck/all.css(adminlte=${adminlte})}">
+    <!-- DataTables -->
+    <link rel="stylesheet" th:href="@{{adminlte}/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css(adminlte=${adminlte})}">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" th:href="@{{adminlte}/dist/css/AdminLTE.min.css(adminlte=${adminlte})}">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+    folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" th:href="@{{adminlte}/dist/css/skins/_all-skins.min.css(adminlte=${adminlte})}">
+</head>
+<body>
+
+</body>
+</html>
