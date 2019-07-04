@@ -12,7 +12,7 @@ spring:
         git:
           uri: http://192.168.142.130/itoken/itoken-config-respo.git
           search-paths: respo
-          username: zyt
+          username: 123123
           password: 12345678
   zipkin:
     base-url: http://192.168.142.132:9411
