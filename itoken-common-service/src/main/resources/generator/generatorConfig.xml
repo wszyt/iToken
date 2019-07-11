@@ -38,15 +38,23 @@
                 type="XMLMAPPER"/>
 
          <!--itoken-service-admin -->
-        <table catalog="itoken-service-admin" tableName="tb_sys_user">
+        <table catalog="myshop" tableName="tb_sys_user">
             <!-- mysql 配置 -->
             <generatedKey column="user_code" sqlStatement="Mysql" identity="false"/>
         </table>
 
 
         <!-- itoken-service-posts -->
-        <table catalog="itoken-service-posts" tableName="tb_posts_post">
+        <table catalog="myshop" tableName="tb_posts_post">
             <generatedKey column="post_guid" sqlStatement="Mysql" identity="false"/>
+        </table>
+
+        <!-- itoken-service-posts -->
+        <table catalog="myshop" tableName="tb_seckill">
+        </table>
+
+        <!-- itoken-service-posts -->
+        <table catalog="myshop" tableName="tb_seckill_order">
         </table>
 
     </context>

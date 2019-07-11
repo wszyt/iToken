@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: itoken-service-seckill
+
+server:
+  port: 8506

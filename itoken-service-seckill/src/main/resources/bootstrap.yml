@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: itoken-service-seckill, itoken-client-redis, itoken-client-eureka
+      label: master
+      profile: dev
