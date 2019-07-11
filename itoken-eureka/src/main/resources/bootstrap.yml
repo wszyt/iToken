@@ -5,3 +5,5 @@ spring:
       name: itoken-eureka, itoken-client-zipkin, itoken-client-admin
       label: master
       profile: dev
+#      discovery:
+#        service-id: itoken-config
