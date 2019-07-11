@@ -10,7 +10,9 @@ import com.zyt.itoken.common.mapper.TbSeckillMapper;
 import com.zyt.itoken.common.mapper.TbSeckillOrderMapper;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 public class SpikeCommodityServiceImpl extends BaseApiService<JSONObject> implements SpikeCommodityService {
     @Autowired
     private TbSeckillMapper tbSeckillMapper;
