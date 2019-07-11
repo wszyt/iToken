@@ -14,7 +14,7 @@ public class TbSeckillOrder implements Serializable {
     @Column(name = "user_phone")
     private Long userPhone;
 
-    private Long state;
+    private Byte state;
 
     @Column(name = "create_time")
     private Date createTime;
@@ -50,14 +50,14 @@ public class TbSeckillOrder implements Serializable {
     /**
      * @return state
      */
-    public Long getState() {
+    public Byte getState() {
         return state;
     }
 
     /**
      * @param state
      */
-    public void setState(Long state) {
+    public void setState(Byte state) {
         this.state = state;
     }
 
@@ -74,4 +74,5 @@ public class TbSeckillOrder implements Serializable {
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
+
 }

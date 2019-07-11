@@ -1,4 +1,4 @@
-package com.zyt.itoke.service.seckill.common;
+package com.zyt.itoken.service.seckill.common;
 
 import lombok.Data;
 

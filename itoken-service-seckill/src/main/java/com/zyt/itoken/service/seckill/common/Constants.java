@@ -1,4 +1,4 @@
-package com.zyt.itoke.service.seckill.common;
+package com.zyt.itoken.service.seckill.common;
 
 public interface Constants {
 	// 响应请求成功

@@ -1,18 +1,18 @@
-package com.zyt.itoke.service.seckill.service.impl;
+package com.zyt.itoken.service.seckill.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
-import com.zyt.itoke.service.seckill.common.BaseApiService;
-import com.zyt.itoke.service.seckill.common.BaseResponse;
-import com.zyt.itoke.service.seckill.service.SpikeCommodityService;
+import com.zyt.itoken.service.seckill.common.BaseApiService;
+import com.zyt.itoken.service.seckill.common.BaseResponse;
+import com.zyt.itoken.service.seckill.service.SpikeCommodityService;
 import com.zyt.itoken.common.domain.TbSeckill;
 import com.zyt.itoken.common.domain.TbSeckillOrder;
 import com.zyt.itoken.common.mapper.TbSeckillMapper;
 import com.zyt.itoken.common.mapper.TbSeckillOrderMapper;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Service;
 
-@RestController
+@Service
 public class SpikeCommodityServiceImpl extends BaseApiService<JSONObject> implements SpikeCommodityService {
     @Autowired
     private TbSeckillMapper tbSeckillMapper;

@@ -22,7 +22,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="itoken-common-domain" />
     <orderEntry type="library" name="Maven: javax.persistence:persistence-api:1.0" level="project" />
-    <orderEntry type="module" module-name="itoken-common" />
+    <orderEntry type="library" name="Maven: com.zyt:itoken-common:1.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:27.0.1-jre" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:failureaccess:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />

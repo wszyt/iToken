@@ -1,8 +1,7 @@
-package com.zyt.itoke.service.seckill.service;
+package com.zyt.itoken.service.seckill.service;
 
 import com.alibaba.fastjson.JSONObject;
-import com.zyt.itoke.service.seckill.common.BaseResponse;
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.zyt.itoken.service.seckill.common.BaseResponse;
 
 // 秒杀接口
 public interface SpikeCommodityService {
@@ -13,6 +12,5 @@ public interface SpikeCommodityService {
      * @param seckillId
      * @return
      */
-    @RequestMapping("/spike")
     public BaseResponse<JSONObject> spike(String phone, Long seckillId);
 }
