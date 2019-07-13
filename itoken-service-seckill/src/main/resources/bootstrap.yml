@@ -5,3 +5,27 @@ spring:
       name: itoken-service-seckill, itoken-client-redis, itoken-client-eureka, itoken-common-service
       label: master
       profile: dev
+  rabbitmq:
+    host: 192.168.142.130
+    port: 5672
+    username: rabbit
+    password: 123456
+    publisher-confirms: true
+    publisher-returns: true
+    template:
+      mandatory: true
+    virtual-host: /
+    connection-timeout: 15000
+    listener:
+      simple:
+        acknowledge-mode: auto
+        concurrency: 1
+        max-concurrency: 10
+
+
+
+####打印MyBatias日志
+logging:
+  level:
+    ### 开发环境使用DEBUG 生产环境info或者error
+    com.zyt.itoken.service.log : DEBUG

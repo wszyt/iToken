@@ -17,4 +17,9 @@ public class SeckillController {
     public BaseResponse<JSONObject> spike(String phone, Long seckillId) {
         return spikeCommodityService.spike (phone, seckillId);
     }
+
+    @RequestMapping(value = "/add")
+    public BaseResponse<JSONObject> addSpikeToken(Long seckillId, Long tokenQuantity) {
+        return  spikeCommodityService.addSpikeToken (seckillId, tokenQuantity);
+    }
 }

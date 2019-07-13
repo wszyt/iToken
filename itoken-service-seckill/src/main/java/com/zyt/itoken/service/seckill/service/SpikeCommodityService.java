@@ -13,4 +13,13 @@ public interface SpikeCommodityService {
      * @return
      */
     public BaseResponse<JSONObject> spike(String phone, Long seckillId);
+
+
+    /**
+     * 给秒杀商品生成一定数量的 token 到 redis 中
+     * @param seckillId
+     * @param tokenQuantity
+     * @return
+     */
+    public BaseResponse<JSONObject> addSpikeToken(Long seckillId, Long tokenQuantity);
 }

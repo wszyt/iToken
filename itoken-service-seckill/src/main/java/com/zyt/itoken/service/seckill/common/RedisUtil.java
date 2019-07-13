@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 @Component
@@ -19,6 +20,10 @@ public class RedisUtil {
 			stringRedisTemplate.expire (key, timeout, TimeUnit.SECONDS);
 		}
 		return  aBoolean;
+	}
+
+	public void setList(String key, List<String> listToken) {
+		stringRedisTemplate.opsForList().leftPushAll(key, listToken);
 	}
 
 
@@ -104,5 +109,9 @@ public class RedisUtil {
 	public Boolean delKey(String key) {
 		return stringRedisTemplate.delete(key);
 
+	}
+
+	public StringRedisTemplate getStringRedisTemplate() {
+		return stringRedisTemplate;
 	}
 }
