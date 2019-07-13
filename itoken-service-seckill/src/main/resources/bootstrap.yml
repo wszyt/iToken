@@ -28,4 +28,4 @@ spring:
 logging:
   level:
     ### 开发环境使用DEBUG 生产环境info或者error
-    com.zyt.itoken.service.log : DEBUG
+    com.zyt.itoken.service.sekill.log : DEBUG
