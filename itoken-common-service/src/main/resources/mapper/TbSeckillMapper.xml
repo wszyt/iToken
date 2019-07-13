@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyt.itoken.common.mapper.TbSeckillMapper">
+  <resultMap id="BaseResultMap" type="com.zyt.itoken.common.domain.TbSeckill">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="seckill_id" jdbcType="BIGINT" property="seckillId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="inventory" jdbcType="INTEGER" property="inventory" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="version" jdbcType="BIGINT" property="version" />
+  </resultMap>
+
+  <update id="invenroeyDeduction" parameterType="long">
+    update tb_seckill set inventory=inventory-1, version=version+1
+    where seckill_id  = #{sekill}   and version = #{version}  and inventory &gt; 0;
+  </update>
+</mapper>
